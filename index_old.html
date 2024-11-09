@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Image Carousel</title>
+</head>
+
+<body>
+  <div class="image-overlay">
+    <div class="image-overlay__close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="#FFFFFF"
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+      </svg>
+    </div>
+    <img class="image-overlay__image" src="" alt="Image 1">
+  </div>
+  <div class="wrapper">
+    <div class="carousel">
+      <!-- <button class="carousel__button carousel__button--left">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M14.83 2.83L13.41 1.41 6 9l7.41 7.59 1.41-1.41L9.83 9z" />
+        </svg>
+      </button> -->
+      <div class="carousel__container">
+        <figure class="carousel__item">
+          <img src="./images/2024-11-05_181517.png" alt="Image 1">
+          <figcaption>Test</figcaption>
+        </figure>
+        <figure class="carousel__item">
+          <img src="./images/2024-11-05_181517.png" alt="Image 2">
+          <figcaption>Test</figcaption>
+        </figure>
+        <figure class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 3">
+          <figcaption>Test</figcaption>
+        </figure>
+        <figure class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 4">
+          <figcaption>Test</figcaption>
+        </figure>
+        <figure class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 5">
+          <figcaption>Test</figcaption>
+        </figure>
+      </div>
+      <!-- <button class="carousel__button carousel__button--right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M9.17 2.83L10.59 1.41 18 9l-7.41 7.59-1.41-1.41L14.17 9z" />
+        </svg>
+      </button> -->
+    </div>
+    <div class="carousel carousel--full" style="--carousel-index: 0;">
+      <button class="carousel__button carousel__button--left">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M14.83 2.83L13.41 1.41 6 9l7.41 7.59 1.41-1.41L9.83 9z" />
+        </svg>
+      </button>
+      <div class="carousel__container">
+        <div class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 1">
+        </div>
+        <div class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 2">
+        </div>
+        <div class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 3">
+        </div>
+        <div class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 4">
+        </div>
+        <div class="carousel__item">
+          <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Image 5">
+        </div>
+      </div>
+      <button class="carousel__button carousel__button--right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M9.17 2.83L10.59 1.41 18 9l-7.41 7.59-1.41-1.41L14.17 9z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+    }
+  </style>
+</body>
+
+</html>

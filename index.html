@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Image Carousel</title>
+</head>
+
+<body>
+  <div class="preview-overlay">
+    <div class="preview-overlay__close"></div>
+    <svg class="preview-overlay__close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+      <img class="preview-overlay__img" src="" alt="">
+  </div>
+  <div class="wrapper">
+    <div class="carousel" style="--amount-carousel-images: 6;">
+      <figure class="carousel__preview">
+        <img src="./images/2024-11-05_181517.png" alt="Code Preview">
+        <figcaption>
+          <p>A fancy code preview just as a placeholder.</p>
+        </figcaption>
+      </figure>
+      <div class="carousel__nav" style="--slider-index: 0;">
+        <button class="carousel__button carousel__button--prev"></button>
+        <div class="carousel__img carousel__img--active" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 1"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_194524.png')"
+          src="./images/2024-11-05_194524.png" caption="Vertical 2"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 3"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 4"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 5"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 6"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 7"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 8"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 9"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 10"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 10"></div>
+        <div class="carousel__img" style="background-image: url('./images/2024-11-05_181517.png')"
+          src="./images/2024-11-05_181517.png" caption="Code 10"></div>
+        <button class="carousel__button carousel__button--next"></button>
+      </div>
+    </div>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        padding: 10vh 5vw;
+      }
+    </style>
+</body>
+
+</html>
